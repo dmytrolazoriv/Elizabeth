@@ -538,6 +538,10 @@ video {
   top: 1.25rem;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -650,6 +654,14 @@ video {
   margin-left: 0.5rem;
 }
 
+.mr-5 {
+  margin-right: 1.25rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -712,6 +724,10 @@ video {
 
 .h-5 {
   height: 1.25rem;
+}
+
+.h-40 {
+  height: 10rem;
 }
 
 .w-full {
@@ -1046,6 +1062,11 @@ video {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .pb-3 {
