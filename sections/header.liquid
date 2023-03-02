@@ -1,10 +1,16 @@
-{% if section.settings.menu.links == blank %}
-  {% assign main_menu_linklist = linklists[section.settings.menu].links %}
-{% else %}
-  {% assign main_menu_linklist = section.settings.menu.links %}
-{% endif %}
+{% liquid
+  if section.settings.menu.links == blank
+    assign main_menu_linklist = linklists[section.settings.menu].links
+  else
+    assign main_menu_linklist = section.settings.menu.links
+  endif
+%}
 
-<div class="reletive bg-white" x-data="{ mobileMenuOpen: false, searchBarOpen: false }">
+<div
+  class="reletive bg-white"
+  x-data="{ mobileMenuOpen: false, searchBarOpen: false }"
+  x-cloak
+>
   <div class="mx-auto px-4 sm:px-6">
     <div class="flex justify-center items-center py-6 md:justify-start md:space-x-10">
       <!-- STORE NAME / STORE LOGO -->
@@ -208,7 +214,6 @@
     {
       "type": "link_list",
       "id": "menu",
-      "default": "elizabeth-menu",
       "label": "Heading Navigation Menu"
     }
   ]

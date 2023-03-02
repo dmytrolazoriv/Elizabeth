@@ -37,7 +37,8 @@
             class="border py-3 px-4 mb-3 text-gray-700 w-full"
             type="text"
             name="contact[name]"
-            id="contact_name">
+            id="contact_name"
+          >
         </div>
         <div class="px-3 md:w-1/2">
           <label class="uppercase text-xs font-medium text-gray-500" for="contact_email">Email address</label>
@@ -45,7 +46,8 @@
             class="border py-3 px-4 mb-3 text-gray-700 w-full"
             type="email"
             name="contact[email]"
-            id="contact_email">
+            id="contact_email"
+          >
         </div>
       </div>
 
@@ -55,7 +57,8 @@
           <textarea
             class="border py-3 px-4 mb-3 text-gray-700 w-full"
             name="contact[body]"
-            id="contact_message"></textarea>
+            id="contact_message"
+          ></textarea>
         </div>
       </div>
 
@@ -64,7 +67,8 @@
           <input
             class="w-full cursor-pointer px-4 py-2 border text-base font-medium bg-gray-900 text-white hover:bg-gray-700"
             type="submit"
-            value="Submit message">
+            value="Submit message"
+          >
         </div>
       </div>
     </div>
@@ -72,19 +76,19 @@
 </div>
 
 {% schema %}
-  {
-    "name": "Contact Form",
-    "settings": [
-      {
-        "type": "text",
-        "id": "title",
-        "label": "Title"
-      }
-    ],
-    "presets": [
-      {
-        "name": "Contact Form"
-      }
-    ]
-  }
+{
+  "name": "Contact Form",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Contact Form"
+    }
+  ]
+}
 {% endschema %}

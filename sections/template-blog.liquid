@@ -13,6 +13,9 @@
                     class="w-full h-80 object-cover"
                     src="{{ article.image | img_url: 'medium'}}"
                     alt="{{ article.image.alt }}"
+                    width="{{ image.width }}"
+                    height="{{ image.height }}"
+                    loading="lazy"
                   >
                 </a>
               {% else %}
